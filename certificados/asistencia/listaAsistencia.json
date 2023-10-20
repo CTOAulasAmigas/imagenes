@@ -1,367 +1,805 @@
 [
- {
-  "Nombre": "Elvia Rutilia Cac",
-  "Teléfono": 45430030,
-  "DPI": 1582546191603
- },
- {
-  "Nombre": "Edgar Raúl Molina",
-  "Teléfono": 55813670,
-  "DPI": 1716856361601
- },
- {
-  "Nombre": "Santiago Xol",
-  "Teléfono": 46829891,
-  "DPI": 2379749291610
- },
- {
-  "Nombre": "Fabián Amperes Mendoza",
-  "Teléfono": 58658586,
-  "DPI": 1635468431503
- },
- {
-  "Nombre": "Misael Castillo",
-  "Teléfono": 50171535,
-  "DPI": 1918990111505
- },
- {
-  "Nombre": "Rudy Amarildo Maldonado Valle",
-  "Teléfono": 52050694,
-  "DPI": 1828802570101
- },
- {
-  "Nombre": "Marvín Raúl Xiloj Pérez",
-  "Teléfono": "41099317\/ 35189505",
-  "DPI": 1737272200805
- },
- {
-  "Nombre": "Brenda Cardona",
-  "Teléfono": 59433730,
-  "DPI": 2583397642010
- },
- {
-  "Nombre": "Miguel Angel Rodas Cruz",
-  "Teléfono": 47370397,
-  "DPI": 2340603812001
- },
- {
-  "Nombre": "Oscar Armando Garza",
-  "Teléfono": 53759673,
-  "DPI": 15962493222205
- },
- {
-  "Nombre": "Heidy del Cid",
-  "Teléfono": 58661847,
-  "DPI": 2460782270101
- },
- {
-  "Nombre": "Dania Palencia",
-  "Teléfono": 55541485,
-  "DPI": 1860095501907
- },
- {
-  "Nombre": "Mynor Guillen",
-  "Teléfono": 51152345,
-  "DPI": 1657037760203
- },
- {
-  "Nombre": "Lidia Veliz",
-  "Teléfono": 56165090,
-  "DPI": 2395643670507
- },
- {
-  "Nombre": "Miguel Marín de León",
-  "Teléfono": 58281326,
-  "DPI": 2334483570920
- },
- {
-  "Nombre": "Guiselda León",
-  "Teléfono": 37576253,
-  "DPI": 2565099480501
- },
- {
-  "Nombre": "Rita Catalán",
-  "Teléfono": "22067460\/42117256",
-  "DPI": 2611886900506
- },
- {
-  "Nombre": "Ilonkaa Cabrera",
-  "Teléfono": "22067430\/32908916",
-  "DPI": 1989918350101
- },
- {
-  "Nombre": "Lourdes María Aguilar Molina",
-  "Teléfono": 40048435,
-  "DPI": 1790884910101
- },
- {
-  "Nombre": "Shero Velazquez",
-  "Teléfono": 51111297,
-  "DPI": 2546140860101
- },
- {
-  "Nombre": "Sebastián Hernández",
-  "Teléfono": 59221839,
-  "DPI": 1959476061412
- },
- {
-  "Nombre": "Iris Juárez",
-  "Teléfono": 59220089,
-  "DPI": 2466468880101
- },
- {
-  "Nombre": "Antonio Benicio Ross Montejo",
-  "Teléfono": 30942553,
-  "DPI": 1594764451307
- },
- {
-  "Nombre": "David González",
-  "Teléfono": 30934795,
-  "DPI": 1851806120101
- },
- {
-  "Nombre": "Laura Par",
-  "Teléfono": "23145900 ext.230",
-  "DPI": 2453037230101
- },
- {
-  "Nombre": "Maritza Balán",
-  "Teléfono": 42204407,
-  "DPI": 1593017341703
- },
- {
-  "Nombre": "Ruth Morales",
-  "Teléfono": 53895566,
-  "DPI": 1581924270101
- },
- {
-  "Nombre": "Abdy Sulemy López",
-  "Teléfono": 53895924,
-  "DPI": 1661090530114
- },
- {
-  "Nombre": "Alvaro Neftaly García Sales",
-  "Teléfono": 46145519,
-  "DPI": 1889972531328
- },
- {
-  "Nombre": "Frank Noe Lopez Martinez",
-  "Teléfono": 47930178,
-  "DPI": 1646849991301
- },
- {
-  "Nombre": "Klelim Mileida Sagastume Buezo",
-  "Teléfono": 54304110,
-  "DPI": 1814493311804
- },
- {
-  "Nombre": "Jorge Mario Golstain Ulloa",
-  "Teléfono": "46447413\/35823212",
-  "DPI": 2367693591801
- },
- {
-  "Nombre": "Karen Lucrecia Gómez Esquivel",
-  "Teléfono": 59306401,
-  "DPI": 1716353102101
- },
- {
-  "Nombre": "Samuel de Jesús García",
-  "Teléfono": 37575991,
-  "DPI": 1732115930513
- },
- {
-  "Nombre": "Reyna Judith López Morales",
-  "Teléfono": 37576649,
-  "DPI": 2257396662101
- },
- {
-  "Nombre": "Victor Manuel Hernández y Hernández",
-  "Teléfono": 55426009,
-  "DPI": 2257396662101
- },
- {
-  "Nombre": "Douglas Salguero",
-  "Teléfono": 37253201,
-  "DPI": 1946428792201
- },
- {
-  "Nombre": "Viviana Mazariegos",
-  "Teléfono": 47449632
- },
- {
-  "Nombre": "Adrián Esquivel",
-  "Teléfono": 47401363,
-  "DPI": 1799469001707
- },
- {
-  "Nombre": "Alex Canek",
-  "Teléfono": 59667010,
-  "DPI": 1979093961701
- },
- {
-  "Nombre": "Samuel López Villagréz",
-  "Teléfono": 53711982,
-  "DPI": 2369206420911
- },
- {
-  "Nombre": "Manuel Iván Calderón Rodríguez",
-  "Teléfono": 54645370,
-  "DPI": 230655570901
- },
- {
-  "Nombre": "Catarina Chay",
-  "Teléfono": 44024270,
-  "DPI": 2306555720901
- },
- {
-  "Nombre": "Mario Valdez Cuxum",
-  "Teléfono": 53394260,
-  "DPI": 2352540020101
- },
- {
-  "Nombre": "José Luis Grijalva",
-  "Teléfono": 30232312,
-  "DPI": 2455671001401
- },
- {
-  "Nombre": "Elizabeth Chuc",
-  "Teléfono": 30388107,
-  "DPI": 1888739100804
- },
- {
-  "Nombre": "Oscar Quinilla",
-  "Teléfono": 30053859,
-  "DPI": 2314235191420
- },
- {
-  "Nombre": "Florentina Lux",
-  "Teléfono": 31110933,
-  "DPI": 2232340361415
- },
- {
-  "Nombre": "Ivan Mendez",
-  "Teléfono": 56166877,
-  "DPI": 2995533370101
- },
- {
-  "Nombre": "Omar Alejando Morales",
-  "Teléfono": 56164558,
-  "DPI": 2178780401201
- },
- {
-  "Nombre": "Elizabeth Galindo",
-  "Teléfono": 59149923,
-  "DPI": 1999075790506
- },
- {
-  "Nombre": "Leandro Calicio",
-  "Teléfono": 37734224,
-  "DPI": 1994958230404
- },
- {
-  "Nombre": "Justa Porras",
-  "Teléfono": 56984609,
-  "DPI": 1823001610313
- },
- {
-  "Nombre": "Obdulio López",
-  "Teléfono": 59538497,
-  "DPI": 2507439650315
- },
- {
-  "Nombre": "Abelino Rámirez López",
-  "Teléfono": 57315147
- },
- {
-  "Nombre": "Otoniel Sanchez",
-  "Teléfono": 47856390,
-  "DPI": 1962921581202
- },
- {
-  "Nombre": "Samuel Feliciano",
-  "Teléfono": 40233912,
-  "DPI": 1813900001204
- },
- {
-  "Nombre": "Marcos Grijalva",
-  "Teléfono": 54293337,
-  "DPI": 1876015930601
- },
- {
-  "Nombre": "Ing. Flavio Silvestre",
-  "Teléfono": 56300516,
-  "DPI": 1901642120601
- },
- {
-  "Nombre": "Leonardo Cabrera",
-  "Teléfono": 41412533,
-  "DPI": 1584667800602
- },
- {
-  "Nombre": "Lorenzo García",
-  "Teléfono": 47571911,
-  "DPI": 1842938730718
- },
- {
-  "Nombre": "Fredy Urizar Rodríguez",
-  "Teléfono": 54542537,
-  "DPI": 1764970210701
- },
- {
-  "Nombre": "Justo Sop",
-  "Teléfono": 55592843,
-  "DPI": 2484411081019
- },
- {
-  "Nombre": "Victor Mendoza",
-  "Teléfono": 50836097,
-  "DPI": 1972549181001
- },
- {
-  "Nombre": "Mildred Hidalgo",
-  "Teléfono": 42188288,
-  "DPI": 1958369521101
- },
- {
-  "Nombre": "Juan Miguel Tzoc ",
-  "Teléfono": "79615555 ext 132",
-  "DPI": 1764926740801
- },
- {
-  "Nombre": "Erick Caseres",
-  "Teléfono": 41200850,
-  "DPI": 1856526620301
- },
- {
-  "Nombre": "Marcela Carranza Vasquez",
-  "Teléfono": 33208206,
-  "DPI": 2459783131901
- },
- {
-  "Nombre": "Blanca Vargas",
-  "Teléfono": 53395813,
-  "DPI": 1992322451901
- },
- {
-  "Nombre": "Dora Iselda Cano Olavarrueta",
-  "Teléfono": 45189270,
-  "DPI": 2337133951901
- },
- {
-  "Nombre": "Avelino Ramírez López",
-  "Teléfono": 50257315147,
-  "DPI": 1922047931204
- },
- {
-  "Nombre": "Mario Roberto Valdez Cuyún",
-  "Teléfono": 50253394260,
-  "DPI": 2352540020101
- }
- ,
- {
-  "Nombre": "Vivian Madeleiny Mazariegos Villanueva",
-  "Teléfono": 50247449632,
-  "DPI": 2179730862201
- }
-
-]
+  {
+    "EMAIL": "geremiasorozco2@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "jummel96@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "vilmaas17@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "bebalis_aldana@hotmail.es",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "maricelagonzalez821@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "ennahernandezcastillo@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "csc.benedicto@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "\n\n\n\n",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "juan24julio@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "yeniesme45@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "sandygsandovalmonroy@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "ericka.espino1104@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "Sandraterezaflorianchilel05@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "nelycosgarcia75@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "margaritatun1984@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "beperezp75@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "walfredorlando2@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "ligiaivethamezquita551@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "sandritadgonzalez@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "robykeu2727@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "auryiboy@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "vipies7@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "consulta.san.@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "jackelineemi@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "paoruiz2811@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "zgxoshiy@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "claudiaquinacatu@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "castanedavinicio166@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "sindysalazar530@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "Salvarezg@miumg.edu.gt",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "edwilam@hotmail.es",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "ameliasuramasoto@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "beperezp75@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "marybeny82@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "luarcakarla@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "alanviniciom@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "lohendymolina@icloud.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "yeniesme45@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "lopezenma068@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "keyalmendaris@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "rafaeltoledo102021@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "marilatin03@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "cristianoms004@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "jimmymonterroso75@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "gomezmaribel817@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "alfue30@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "patriciacastillo1966@hotmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "nuriacordova42@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "laurismaestrus@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "Yonelia2005@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "beatrizhernandezmarro@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "ednalopez.m@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "normapirique3@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "emi_25809@hotmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "ramirezmelissa046@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "glendalisruano@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "greysafre988@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "vilmaas17@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "sandritadgonzalez@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "sindysalazar530@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "exmechajon01@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "carlilymonterroso700@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "lissantos1982@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "marseramirezlo@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "beperezp75@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "almaparvulos@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "herrarte8696@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "armycas777@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "osvaldo.estacion42@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "lissantos1982@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "elenacisneros1965@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "aidamarv@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "consulta.san.3@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  },
+  {
+    "EMAIL": "hisleni.blac@gmail.com",
+    "CENTRO_EDUCATIVO2": "",
+    "PR_DIAG1": "",
+    "PR_CART8": "",
+    "VIRTUAL1": "",
+    "VIRTUAL2": "",
+    "VIRTUAL3": "",
+    "VIRTUAL4": "",
+    "VIRTUAL5": ""
+  }
+ ]
