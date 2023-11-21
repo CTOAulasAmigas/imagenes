@@ -1,0 +1,436 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+    
+
+    
+  
+   
+    <title>Certificado</title>
+  
+    
+</head>
+<body>
+
+        <div class="mt-20 container">
+            <div class="mb-3">
+              <div class="column">
+                <label for="exampleInputEmail1"  class="fontW form-label label">Correo Electrónico</label>
+                <input type="email" id="email" required class="email"  aria-describedby="emailHelp">
+              </div>
+              <div id="cont-list"></div>
+            </div>
+            
+              <label id="error"  class="err fontW label"></label>
+            
+            <div class="d-grid gap-2">
+              <button type="submit" onClick="getLists()" id="bt1" class="btn boton fontW" >Continuar</button>
+              <button type="submit" onClick="pdf()" id="bt2" class="btn boton fontW hide" >Descargar</button>
+            </div>
+    </div>
+    <iframe id="mypdf" frameborder="0" style="width: 1000px; height: 500px; margin-top: 30px;"></iframe>
+
+    
+
+  <script type="text/javascript">
+    let folders = [];
+let data;
+
+async function lists() {
+  const fet = await fetch("https://www.desma.com.mx/api/extras/aulas", {
+    method: "OPTIONS",
+  });
+
+  data = await fet.json();
+}
+
+lists();
+
+async function getLists() {
+  const email = document.getElementById("email").value;
+  const url = `https://api.sendinblue.com/v3/contacts/${email}`;
+  const options = {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+      "api-key":
+        "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",
+    },
+  };
+
+  fetch(url, options)
+    //Get lists names by ids
+    .then((response) => {
+      if (response.status === 404) {
+        error.innerHTML = "No estás registrado en ningún taller, si tienes dudas puedes escribirnos a apropiacion@aulasamigas.com";
+        document.getElementById("email").classList.add("is-invalid");
+      } else if (response.status === 400) {
+        error.innerHTML =
+          'Porfavor ingrese un email valido, como "example@example.com"';
+        document.getElementById("email").classList.add("is-invalid");
+      } else if (response.status === 200) {
+        error.innerHTML = " ";
+        document.getElementById("email").classList.remove("is-invalid");
+        return response.json();
+      }
+    })
+    .then((response) => {
+      const listContact = response.listIds;
+      fetch("https://api.sendinblue.com/v3/contacts/folders/42/lists", options)
+        .then((response) => response.json())
+        .then((response) => {
+          //Get array of lists on the folder
+          const listFolder = response.lists;
+          //Get the id on a different array
+          for (let i = 0; i < listFolder.length; i++) {
+            folders = [...folders, listFolder[i].id];
+          }
+
+          //Find the common id between the email listIDs and the folder listIDs
+          const Commons = folders.filter((element) => {
+            let ids = [];
+            for (let i = 0; i < listContact.length; i++) {
+              if (listContact.includes(folders[i])) {
+                ids = [...ids, folders[i]];
+              }
+            }
+            return ids;
+          });
+
+          if (Commons.length == 0) {
+            error.innerHTML =
+              "No esta registrado en los talleres, registrese aqui";
+          } else {
+            const div = document.getElementById("cont-list");
+            div.innerHTML =
+              '<label for="list" class="fontW label">Certificado</label> <select class="select" value="Todos" name="list" id="list"></select>';
+            const select = document.getElementById("list");
+            select.innerHTML = '<option value="Todos">Todos</option>';
+
+            //Put the common list's names on the select
+
+            Commons.forEach((element) => {
+              fetch(
+                `https://api.sendinblue.com/v3/contacts/lists/${element}`,
+                options
+              )
+                .then((response) => response.json())
+                .then((response) => {
+                  //Create the select
+
+                  if (listContact.includes(response.id)) {
+                    const name = response.name;
+                    (Option = document.createElement("OPTION")),
+                      (OptionVal = document.createTextNode(name));
+
+                    Option.appendChild(OptionVal);
+                    select.insertBefore(Option, select.firstChild);
+
+                    //Hide button
+                    const btn = document.getElementById("bt1");
+                    const btn2 = document.getElementById("bt2");
+                    btn.style.display = "none";
+
+                    btn2.style.display = "inline";
+                    btn2.classList.remove("hide");
+
+                    //Delete the error message
+                    error.innerHTML = " ";
+                  }
+                })
+                .catch((err) => {
+                  console.log(err);
+                  error.innerHTML =
+                    "No estás registrado en ningún taller, si tienes dudas puedes escribirnos a apropiacion@aulasamigas.com";
+                });
+            });
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+          error.innerHTML =
+            "No estás registrado en ningún taller, si tienes dudas puedes escribirnos a apropiacion@aulasamigas.com";
+        });
+    })
+    .catch((err) => {
+      console.log(err);
+      error.innerHTML = "No estás registrado en ningún taller, si tienes dudas puedes escribirnos a apropiacion@aulasamigas.com";
+    });
+}
+
+// fuunciion PDF
+async function pdf() {
+  const monthNames = [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre",
+  ];
+
+  const email = document.getElementById("email").value;
+  const url = `https://api.sendinblue.com/v3/contacts/${email}`;
+  const options = {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+      "api-key":
+        "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",
+    },
+  };
+
+  const optionscert = {
+    mode: "no-cors",
+    method: "GET",
+    headers: { accept: "application/pdf" },
+    credentials: "omit",
+    cache: "no-cache",
+  };
+  const optionsttf = {
+    mode: "no-cors",
+    method: "GET",
+    headers: { accept: "font/ttf" },
+  };
+
+  fetch(url, options)
+    .then((response) => {
+      if (response.status === 404) {
+        error.innerHTML = "No estás registrado en ningún taller, si tienes dudas puedes escribirnos a apropiacion@aulasamigas.com";
+        document.getElementById("email").classList.add("is-invalid");
+      } else if (response.status === 400) {
+        error.innerHTML =
+          'Porfavor ingrese un email valido, como "example@example.com"';
+        document.getElementById("email").classList.add("is-invalid");
+      } else if (response.status === 200) {
+        return response.json();
+      }
+    })
+    .then((response) => {
+      const { attributes } = response;
+      const lists = response.listIds;
+      const select = document.getElementById("list").value;
+      const name = `${attributes.NOMBRE} ${attributes.APELLIDOS}`;
+      const { PDFDocument, rgb } = PDFLib;
+
+      if (select == "Todos") {
+        for (let i = 0; i < lists.length; i++) {
+          const listId = lists[i];
+          fetch(
+            `https://api.sendinblue.com/v3/contacts/lists/${listId}`,
+            options
+          )
+            .then((response) => response.json())
+            .then((response) => {
+              async function embedFontAndMeasureText() {
+                // Fetch custom font
+                const fontBytes = await fetch(
+                  "https://filesdeployer.desma.com.mx/Lato-Regular.ttf"
+                ).then(async (res) => await res.arrayBuffer());
+
+                for (let i = 0; i < Object.values(data).length; i++) {
+                  const currentList = Object.values(data).filter(
+                    (item) => item.id === listId
+                  );
+
+                  if (currentList.length > 0 && currentList !== undefined) {
+                    if (Object.values(data)[i].id === listId) {
+                      const exBytes = await fetch(`${currentList[0].url}`).then(
+                        (res) => res.arrayBuffer()
+                      );
+
+                      // Create a new PDFDocument
+                      const pdfDoc = await PDFDocument.load(exBytes);
+
+                      // Register the `fontkit` instance
+                      pdfDoc.registerFontkit(fontkit);
+
+                      // Embed our custom font in the document
+                      const customFont = await pdfDoc.embedFont(fontBytes);
+
+                      // Add a blank page to the document
+                      const pages = pdfDoc.getPages();
+                      const page = pages[0];
+
+                      // Create a string of text and measure its width and height in our custom font
+                      const text = name.toUpperCase();
+                      const textSize = 28;
+                      const textWidth = customFont.widthOfTextAtSize(
+                        text,
+                        textSize
+                      );
+                      //const textHeight = customFont.heightAtSize(textSize)
+                      const { width } = page.getSize();
+
+                      //Date
+                      let date = new Date();
+                      const dia = `${date.getDate()}`;
+                      const mes = `${monthNames[date.getMonth()]}`;
+                      const year = `${date.getFullYear()}`;
+
+                      // Draw the string of text on the page
+                      page.drawText(text, {
+                        x: (width - textWidth) / 2,
+                        y: 338,
+                        size: textSize,
+                        font: customFont,
+                        color: rgb(1, 1, 1),
+                      });
+
+                      page.drawText(dia, {
+                        x: 413,
+                        y: 115,
+                        size: 16,
+                        font: customFont,
+                        color: rgb(0.14, 0.32, 0.41),
+                      });
+
+                      page.drawText(mes, {
+                        x: 510,
+                        y: 115,
+                        size: 16,
+                        font: customFont,
+                        color: rgb(0.14, 0.32, 0.41),
+                      });
+
+                      page.drawText(year, {
+                        x: 625,
+                        y: 115,
+                        size: 16,
+                        font: customFont,
+                        color: rgb(0.14, 0.32, 0.41),
+                      });
+
+                      // Serialize the PDFDocument to bytes (a Uint8Array)
+                      const pdfBytes = await pdfDoc.save();
+
+                      // Trigger the browser to download the PDF document
+                      download(
+                        pdfBytes,
+                        `${currentList[0].name}.pdf`,
+                        "application/pdf"
+                      );
+
+                      //Shows pdf on iframe at html
+                      // const uri = await pdfDoc.saveAsBase64({dataUri: true});
+                      // document.querySelector("#mypdf").src = uri;
+                      //Execite func that generates pdf
+                    }
+                  } else {
+                    return;
+                  }
+                }
+              }
+              embedFontAndMeasureText();
+            })
+            .catch((err) => console.error(err));
+        }
+      } else {
+        async function embedFontAndMeasureText() {
+          // Fetch custom font
+
+          const currentList = Object.values(data).filter(
+            (item) => item.name === select
+          );
+          const fontBytes = await fetch(
+            "https://filesdeployer.desma.com.mx/Lato-Regular.ttf"
+          )
+            .then(async (response) => await response.arrayBuffer())
+            .catch((error) => console.log("error", error));
+
+          const exBytes = await fetch(`${currentList[0].url}`)
+            .then(async (res) => await res.arrayBuffer())
+            .catch((err) => console.error(err));
+
+          // Create a new PDFDocument
+          const pdfDoc = await PDFDocument.load(exBytes);
+
+          // Register the `fontkit` instance
+          pdfDoc.registerFontkit(fontkit);
+
+          // Embed our custom font in the document
+          const customFont = await pdfDoc.embedFont(fontBytes);
+
+          // Add a blank page to the document
+          const pages = pdfDoc.getPages();
+          const page = pages[0];
+
+          // Create a string of text and measure its width and height in our custom font
+          const text = name.toUpperCase();
+          const textSize = 28;
+          const textWidth = customFont.widthOfTextAtSize(text, textSize);
+          //const textHeight = customFont.heightAtSize(textSize)
+          const { width } = page.getSize();
+          //Date
+          let date = new Date();
+          const dia = `${date.getDate()}`;
+          const mes = `${monthNames[date.getMonth()]}`;
+          const year = `${date.getFullYear()}`;
+
+          // Draw the string of text on the page
+          page.drawText(text, {
+            x: (width - textWidth) / 2,
+            y: 338,
+            size: textSize,
+            font: customFont,
+            color: rgb(1, 1, 1),
+          });
+
+          page.drawText(dia, {
+            x: 418,
+            y: 115,
+            size: 16,
+            font: customFont,
+            color: rgb(0.14, 0.32, 0.41),
+          });
+
+          page.drawText(mes, {
+            x: 508,
+            y: 115,
+            size: 16,
+            font: customFont,
+            color: rgb(0.14, 0.32, 0.41),
+          });
+
+          page.drawText(year, {
+            x: 623,
+            y: 115,
+            size: 16,
+            font: customFont,
+            color: rgb(0.14, 0.32, 0.41),
+          });
+
+          // Serialize the PDFDocument to bytes (a Uint8Array)
+          const pdfBytes = await pdfDoc.save();
+
+          // Trigger the browser to download the PDF document
+          download(pdfBytes, `${currentList[0].name}.pdf`, "application/pdf");
+
+          //Shows pdf on iframe at html
+          const uri = await pdfDoc.saveAsBase64({ dataUri: true });
+          document.querySelector("#mypdf").src = uri;
+        }
+
+        //Execite func that generates pdf
+        embedFontAndMeasureText();
+      }
+    });
+}
+
+
+
+
+
+  </script>
+</body>

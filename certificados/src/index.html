@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="file.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+    <title>Certificado</title>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="mt-20 container">
+      <div class="mb-3">
+        <div class="column">
+          <label for="exampleInputEmail1" class="fontW form-label label"
+            >Correo Electrónico</label
+          >
+          <input
+            type="email"
+            id="email"
+            required
+            class="email"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div id="cont-list"></div>
+      </div>
+
+      <label id="error" class="err fontW label"></label>
+      <!-- <button class="fileInputContainer">
+        <label for="file" class="fileLabel">Subir Certificado</label>
+        <input type="file" id="file" class="fileInput" />
+      </button> -->
+      <!-- <button onclick="lists()">dadads</button> -->
+
+      <div class="d-grid gap-2">
+        <button
+          type="submit"
+          onClick="getLists()"
+          id="bt1"
+          class="btn boton fontW"
+        >
+          Continuar
+        </button>
+        <button
+          type="submit"
+          onClick="pdf()"
+          id="bt2"
+          class="btn boton fontW hide"
+        >
+          Descargar
+        </button>
+      </div>
+    </div>
+    <iframe
+      id="mypdf"
+      frameborder="0"
+      style="width: 800px; height: 800px"
+    ></iframe>
+    <script src="main.js"></script>
+    <!-- <script src="match.js"></script> -->
+
+</html>
