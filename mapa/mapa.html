@@ -1,0 +1,297 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+  .map-container {
+      position: relative;
+      display: inline-block;
+      background-color: #291A64;
+  }
+
+  .map-point {
+      position: absolute;
+      width: 15px; /* Tamaño del punto */
+      height: 15px; /* Tamaño del punto */
+      background-color: #CD0CE5; /* Color del punto */
+      border-radius: 50%; /* Hace el punto circular */
+      cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+
+  .map-point:hover {
+    background-color: blue; /* Color del punto */
+  }
+
+  #tooltip {
+        position: fixed;
+        top: 380px; /* Ajusta la posición según sea necesario */
+        left: 1120px; /* Ajusta la posición según sea necesario */
+        padding: 5px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        display: none;
+    }
+
+
+    .modal {
+      position: fixed;
+      top: 20%;
+      left: 40%;
+      width: 676px;
+      height: 469px;
+      transform: translate(-50%, -50%);
+      /* background-color: white; */
+      padding: 20px;
+      /* border: 1px solid #888; */
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      z-index: 1000; /* Asegúrate de que esté por encima de todo lo demás */
+
+      /* UI Properties */
+      border: 1px solid #FFFFFF7D;
+      border-radius: 55px;
+      opacity: 1;
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-opening {
+        animation: openModal 0.3s forwards;
+    }
+
+    .modal-closing {
+        animation: closeModal 0.3s forwards;
+    }
+
+    @keyframes openModal {
+        from {
+            transform: scale(0);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes closeModal {
+        from {
+            transform: scale(1);
+            opacity: 1;
+        }
+        to {
+            transform: scale(0);
+            opacity: 0;
+        }
+    }
+
+    #pais-image{
+      width: 135px; /* Ancho fijo */
+      height: auto; /* Alto fijo */
+    }
+
+    #modal-image{
+      width: 300px; /* Ancho fijo */
+      height: auto; /* Alto fijo */
+    }
+
+    #modal-title{
+      color: white;
+      text-align: center;
+      font-family: 'Outfit', sans-serif;
+      font-weight: bolder;
+      font-size: 25px;
+      margin-top: 0px;
+      /* margin-bottom: 0px; */
+    }
+
+    #modal-text{
+      color: white;
+      text-align: center;
+      font-family: 'Outfit', sans-serif;
+      font-weight: bolder;
+      font-size: 20px;
+      display: none;
+    }
+
+    
+    td {
+          /* border: 1px solid #ddd; */
+          padding-top: 28px;
+          text-align: center;
+      }
+
+    .row-text{
+      width: 350px;
+      color: white;
+      text-align: left;
+      font-family: 'Outfit', sans-serif;
+      font-weight: bolder;
+      font-size: 20px;
+    }
+
+    .btn-mas{
+      height: 50px;
+      width: 140px;
+      background-color: #58E5FF;
+      border: 1px solid #58E5FF; 
+      color: #462CAD;
+      font-family: 'Outfit', sans-serif;
+      font-weight: bolder;
+      font-size: 20px;
+      border-radius: 15px;
+    }
+
+    .container{
+      color: white;
+      position:relative;
+      left:500px;
+      bottom:160px;
+      text-align: start;
+      width: 260px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+    }
+
+    .container-cifra{
+      color: white;
+      position:relative;
+      left:1100px;
+      bottom:600px;
+      text-align: start;
+      width: 260px;
+      font-size: 20px;
+    }
+
+    #texto-experiencias{
+      color: white; 
+      font-family: 'Outfit', sans-serif;
+      font-size: 25px;
+    }
+
+    #cifra-experiencias{
+      color: white; 
+      font-family: 'Outfit', sans-serif;
+      font-size: 60px;
+    }
+
+
+</style>
+
+<div class="map-container">
+  <img src="mapa_fondo.svg" usemap="#image-map">
+  <div class="map-point" style="left: 851px; top: 534px;" onmouseover="showTooltip('Necoclí/Antioquia')" onmouseout="hideTooltip()"onclick="showModal('Necoclí/Antioquia', 'imagen_necocli.png')" title="Necoclí/Antioquia "></div>
+  <div class="map-point" style="left: 844px; top: 520px;" onmouseover="showTooltip('Texto para Frontino/Antioquia')" onmouseout="hideTooltip()"onclick="window.open('https://aulasamigas.com/');" title="Frontino/Antioquia "></div>
+  <div class="map-point" style="left: 842px; top: 550px;" onmouseover="showTooltip('Texto para Marinilla/Antioquia')" onmouseout="hideTooltip()"onclick="window.open('https://aulasamigas.com/');" title="Marinilla/Antioquia "></div>
+
+  <div id="modal" class="modal" style="display: none;">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="pais-image" src="colombia.png" alt="Pais">
+    <p id="modal-title">Experiencias Significativas</p>
+    <p id="modal-text">Texto del Modal</p>
+
+    <table>
+      <thead>
+        <tr>
+          <td  class="row-text"><b>Experiencia:</b></td>
+          <td rowspan="4"><img id="modal-image" src="imagen_necocli.png" alt="Imagen del Modal"></td>
+        </tr>
+        <tr>
+          <td class="row-text">Tema:</td>
+        </tr>
+        <tr>
+          <td class="row-text">Área de Conocimiento:</td>
+        </tr>
+        <tr>
+          <td class="row-text">Grado escolar:</td>
+        </tr>
+        <tr>
+          <td colspan="2"><button class="btn-mas" onclick="window.open('https://aulasamigas.com/');">Ver más</button></td>
+        </tr>
+      </thead>
+      </table>
+  </div>
+
+  <div class="container">
+    <p>Zonas del pais (Colombia) con mayor cantidad de experiencias significativas: Antioquia</p>
+  </div>
+
+  <div class="container-cifra">
+    <table>
+      <thead>
+        <tr>
+          <td>
+            <img src="icono_usuario.png" style="width: 50px; height: auto;"/>
+          </td>
+          <td>
+            <img src="linea.png" style="height: 60px;width: auto; padding-left: 10px; padding-right: 10px;"/>
+          </td>
+          <td>
+            <p id="texto-experiencias">Experiencias significativas</p>
+          </td>
+          <td><p id="cifra-experiencias">1.135</p></td>
+        </tr>
+      </thead>
+    </table>
+    
+  </div>
+
+</div>
+<div id="tooltip"></div>
+
+
+<!-- <img src="mapa_fondo.svg" usemap="#image-map"> -->
+
+<map name="image-map">
+    <area target="_blank" alt="Necoclí/Antioquia " title="Necoclí/Antioquia " href="https://aulasamigas.com/" coords="861,544,NaN" shape="circle">
+    <area target="_blank" alt="Frontino/Antioquia" title="Frontino/Antioquia" href="https://aulasamigas.com/" coords="861,544,NaN" shape="circle">
+    <area target="_blank" alt="Frontino/Antioquia" title="Frontino/Antioquia" href="https://aulasamigas.com/" coords="861,544,NaN" shape="circle">
+</map>
+
+<script>
+//   function showTooltip(text) {
+//     var tooltip = document.getElementById('tooltip');
+//     tooltip.style.display = 'block';
+//     tooltip.textContent = text;
+// }
+
+// function hideTooltip() {
+//     var tooltip = document.getElementById('tooltip');
+//     tooltip.style.display = 'none';
+// }
+
+function showModal(text, imageSrc) {
+    var modal = document.getElementById('modal');
+    document.getElementById('modal-text').textContent = text;
+    document.getElementById('modal-image').src = imageSrc;
+
+    modal.classList.remove("modal-closing");
+    modal.classList.add("modal-opening");
+    modal.style.display = 'block';
+}
+
+function closeModal() {
+    var modal = document.getElementById('modal');
+    modal.classList.remove("modal-opening");
+    modal.classList.add("modal-closing");
+
+    // Opcional: ocultar el modal después de que la animación termine
+    setTimeout(function() {
+        modal.style.display = 'none';
+    }, 300); // El tiempo aquí debe coincidir con la duración de la animación
+}
+
+
+
+</script>
